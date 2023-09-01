@@ -23,3 +23,17 @@ window.onscroll = () => {
   search.classList.remove("active");
 };
 // header section end
+// swipper slider start
+var swiper = new Swiper(".swiper-container", {
+  effect: "flip",
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swipper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+// swipper slider start
