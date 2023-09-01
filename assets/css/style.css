@@ -806,7 +806,6 @@ header {
 }
 
 /* slider section end */
-  
 
 /* reservation section start */
 .contact .row {
@@ -853,6 +852,55 @@ header {
   background: none;
 }
 /* reservation section end */
+/* cart blog section start */
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  border: var(--border);
+}
+.blogs .box-container .box .image {
+  height: 28rem;
+  overflow: hidden;
+  width: 100%;
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  overflow: cover;
+  width: 100%;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .box-container .box .content {
+  padding: 5rem 2rem;
+}
+.blogs .box-container .box .content .title {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+  color: var(--main-color);
+}
+.blogs .box-container .box .content span {
+  color: var(--main-color);
+  display: block;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.blogs .box-container .box .content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 1rem 0;
+}
+
+/* cart blog section end */
 /* media queries */
 @media (max-width: 1054px) {
   .header .navbar {
@@ -906,7 +954,7 @@ header {
   }
   .swiper-button-prev,
   .swiper-button-next {
-   opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -918,6 +966,11 @@ header {
     flex-direction: column;
     justify-content: center;
   }
+  .shop1 .shop-image {
+
+    padding: 11rem 10rem;
+ 
+  }
 }
 
 @media (max-width: 450px) {
@@ -927,4 +980,7 @@ header {
   .bg-shop .shop-links h2 {
     font-size: 2.4rem;
   }
+ .blogs .heading{
+  font-size: 3rem;
+ }
 }
