@@ -68,6 +68,33 @@ section {
   background-color: var(--main-color);
   color: var(--bg);
 }
+/* scroll top start */
+#progress {
+  background-color: #a4a4a4;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 99;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  background-color: black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  color: var(--white);
+}
+/* scroll top end */
 /* header section start */
 header {
   background: var(--bg);
@@ -982,7 +1009,6 @@ header {
 }
 .footer .footer3 {
   margin-top: 3rem;
-
 }
 .footer .footer3 ul {
   display: flex;
