@@ -683,6 +683,8 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
+  margin-bottom: 5rem;
+
 }
 
 .blogs .box-container .box {
@@ -762,7 +764,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 5rem;
 }
 .footer1 {
   display: flex;

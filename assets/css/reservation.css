@@ -439,6 +439,10 @@ header {
 }
 /* about home section end */
 /* reservation section start */
+.reservation__container{
+  margin-bottom: 5rem;
+
+}
 .reservation__container .hero1 {
   left: 0px;
   top: 80px;
@@ -518,7 +522,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 5rem;
 }
 .footer1 {
   display: flex;
