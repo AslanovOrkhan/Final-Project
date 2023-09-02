@@ -438,6 +438,113 @@ header {
   font-size: 1.3rem;
 }
 /* about home section end */
+
+/* menu product filter start */
+#categories {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.categoryBtn {
+  margin-top: 10px;
+  margin-right: 1.1rem;
+  border: 1px solid #707070;
+  padding: 1rem 2rem;
+  background: var(--white);
+  border-radius: 5px;
+  color: var(--bg);
+  font-weight: 500;
+}
+.categoryBtn:hover {
+  color: var(--white);
+  background: var(--main-color);
+}
+.bg-menu {
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+  margin-top: 5rem;
+}
+.menu-title {
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--bg);
+}
+.menu-title section {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--white);
+  border-radius: 5px;
+  background-color: var(--main-color);
+}
+.menu-title h2 {
+  font-size: 3.8rem;
+  margin-top: 3.5rem;
+  text-transform: uppercase;
+}
+.menu-title hr {
+  margin: 15px auto;
+  width: 150px;
+  background: rgb(159, 134, 101);
+}
+.menu-flex {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-flex .menu1 {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+  display: inline-flex;
+}
+
+.menu1 img {
+  max-width: 100%;
+  height: 100%;
+}
+.menu1:hover img {
+  transform: scale(1.1);
+}
+.menu1 h4 {
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  color: var(--bg);
+}
+
+.menu1 .line {
+  margin-top: 7px;
+  border-top: 3px dotted rgb(159, 134, 101);
+  width: 52%;
+}
+.menu-link {
+  text-align: center;
+  margin: 30px auto;
+}
+.menu-link a {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: capitalize;
+  color: #fff;
+  background: rgb(159, 134, 101);
+  padding: 10px 15px;
+  transition: 0.4s ease-in-out;
+  border: 1px solid rgb(159, 134, 101);
+}
+.menu-link a:hover {
+  background: transparent;
+}
+
+/* menu product filter end */
 /* media queries */
 @media (max-width: 1200px) {
 }
@@ -458,6 +565,9 @@ header {
   }
   section {
     padding: 2rem;
+  }
+  .menu-flex .menu1 {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
