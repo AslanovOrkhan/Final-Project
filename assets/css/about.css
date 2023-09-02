@@ -555,6 +555,101 @@ header {
 }
 
 /* about area end */
+/* wcu section start */
+.wcu-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.wcu-title span {
+  color: var(--white);
+  background: var(--main-color);
+  font-family: "Jost", sans-serif;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 1.5px 13px;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  line-height: 22px;
+  margin-bottom: 23px;
+}
+.wcu-title {
+  color: var(--bg);
+  font-size: 2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 15px;
+}
+.cart-container .item {
+  width: 32%;
+  border: 1px solid #a7a7a7;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 40px 0;
+}
+.cart-container .item:hover #right {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+.cart-container .item .item-image {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.cart-container .item .item-text {
+  text-align: center;
+}
+.cart-container .item .item-text h2 {
+  font-size: 15px;
+  color: var(--bg);
+  line-height: 1.8;
+}
+.cart-container .item .item-text p {
+  color: #a7a7a7;
+  font-size: 13px;
+  line-height: 2;
+  margin: 15px 0;
+  display: block;
+}
+.cart-container .item .item-text a i {
+  border: 1px solid #a4a4a4;
+  padding: 20px;
+  border-radius: 5px;
+}
+/* wcu section end */
+/* best coffee section start */
+.about .row {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row .image img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+.about .row .content h3 {
+  font-size: 3rem;
+  color: var(--bg);
+}
+.about .row .content p {
+  font-size: 1.8rem;
+  color: #6c6c6c;
+  padding: 1.2rem 0;
+  line-height: 2;
+}
+/* best coffee section end */
 /* media queries */
 @media (max-width: 1200px) {
   .container {
@@ -593,6 +688,10 @@ header {
   section {
     padding: 2rem;
   }
+  .cart-container .item {
+    width: 80%;
+    margin: 0.9rem auto;
+  }
 }
 @media (max-width: 768px) {
   .header .search-form {
@@ -602,11 +701,17 @@ header {
   .container-image-container {
     margin-bottom: 80px;
   }
+  .cart-container .item {
+    width: 90%;
+  }
 }
 
 @media (max-width: 576px) {
   .about-shape1 img {
     opacity: 0;
+  }
+  .cart-container .item {
+    width: 100%;
   }
 }
 
