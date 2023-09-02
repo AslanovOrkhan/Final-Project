@@ -650,6 +650,110 @@ header {
   line-height: 2;
 }
 /* best coffee section end */
+/* best coffee section start */
+.about .row {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row .image img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+.about .row .content h3 {
+  font-size: 3rem;
+  color: var(--bg);
+}
+.about .row .content p {
+  font-size: 1.8rem;
+  color: #6c6c6c;
+  padding: 1.2rem 0;
+  line-height: 2;
+}
+/* best coffee section end */
+/* about personal section start */
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  border: var(--border);
+  border: 1px solid #a4a4a4;
+  padding: 2.5rem 3rem;
+  background: var(--white);
+  border-radius: 10px;
+}
+.blogs .box-container .box .image {
+  height: 30rem;
+  overflow: hidden;
+  width: 100%;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+.blogs .box-container .box .image:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 15%;
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .box-container .box .content {
+  padding: 5rem 2rem;
+}
+.blogs .box-container .box .content .title {
+  font-size: 2.3rem;
+  line-height: 1.5;
+  color: var(--bg);
+  font-weight: 600;
+}
+
+.blogs .box-container .box .content .title:hover {
+  color: var(--main-color);
+}
+.blogs .box-container .box .content span {
+  color: var(--main-color);
+  display: block;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.blogs .box-container .box .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.blogs .box-container .box .content ul li a i {
+  padding: 1.2rem;
+  color: #a4a4a4;
+  font-size: 15px;
+  border: 1px solid #a4a4a4;
+  border-radius: 50%;
+}
+.blogs .box-container .box .content ul li a i:hover {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+/* about personal section end */
+
 /* media queries */
 @media (max-width: 1200px) {
   .container {
