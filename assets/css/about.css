@@ -397,6 +397,47 @@ header {
   font-weight: 500;
 }
 /* header section end */
+/* about home section start  */
+.about-home {
+  height: 70vh;
+  width: 100%;
+  background-image: url(/assets/images/pp-bg-3-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-home .about-header {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 15px;
+}
+.about-home .about-header h2 {
+  color: #ffffff;
+  font-size: 4.6rem;
+}
+.about-home .about-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
+  gap: 10px;
+}
+.about-home .about-header .breadcrumb-begin a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.about-home .about-header .breadcrumb-end a {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+/* about home section end */
 /* media queries */
 @media (max-width: 1054px) {
   .header .navbar {
