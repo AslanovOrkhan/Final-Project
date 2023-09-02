@@ -23,41 +23,27 @@ window.onscroll = () => {
   search.classList.remove("active");
 };
 // header section end
-// swipper slider start
-var swiper = new Swiper(".swiper-container", {
-  effect: "flip",
-  grabCursor: true,
-  loop: true,
-  pagination: {
-    el: ".swipper-pagination",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-// swipper slider start
 // scroll top start
 
 let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
-  if (pos > 100) {
-    scrollProgress.style.display = "grid";
-  } else {
-    scrollProgress.style.display = "none";
-  }
-  scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
-};
-
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
-// scroll top end
- 
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos > 100) {
+      scrollProgress.style.display = "grid";
+    } else {
+      scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+      document.documentElement.scrollTop = 0;
+    });
+  };
+  
+  window.onscroll = calcScrollValue;
+  window.onload = calcScrollValue;
+  // scroll top end
+   

@@ -108,6 +108,7 @@ header {
   left: 0;
   right: 0;
   z-index: 99;
+  box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
 }
 .header .navbar .menu-item a {
   margin: 0 1.8rem;
