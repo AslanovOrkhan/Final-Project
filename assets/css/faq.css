@@ -438,7 +438,69 @@ header {
   font-size: 1.3rem;
 }
 /* about home section end */
+/* faw area start */
+.faq-accordion {
+  margin: 5rem 0;
+}
+.faq-accordion .accordion {
+  border: 1px solid #e2dfdd;
+  width: 70%;
+  margin: 2rem auto;
+  border-radius: 7px;
+  box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+  padding: 4rem;
+}
+.accordion-item {
+  border: 1px solid #e2dfdd;
+  padding: 1.2rem 2rem;
+  margin-top: 3rem;
+  border-radius: 7px;
+}
 
+.accordion-header {
+  background-color: var(--white);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.4rem 1.1rem;
+  border-radius: 7px;
+}
+.accordion-header span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.accordion-header i {
+  color: var(--bg);
+  font-size: 2rem;
+}
+.accordion-icon {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.accordion-content {
+  display: none;
+  border: none;
+  transition: 0.6s;
+}
+.accordion-content p {
+  color: #6c6c6c;
+  padding: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  transition: 0.6s;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+.accordion-item.active .accordion-header i {
+  transform: rotate(180deg);
+}
+
+/* faq area end */
 /* media queries */
 
 @media (max-width: 1054px) {
@@ -464,6 +526,9 @@ header {
   .header .search-form {
     width: 90%;
     right: 2rem;
+  }
+  .faq-accordion .accordion {
+    width: 100%;
   }
 }
 
