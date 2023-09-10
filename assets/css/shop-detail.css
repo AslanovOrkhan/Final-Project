@@ -440,15 +440,16 @@ header {
 /* shop detail home section end */
 /* shop detail area start */
 .product-div {
-  border: 1px solid red;
+ 
   display: flex;
 }
 .product-div-left {
-  border: 1px solid red;
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .image-container {
   border: 1px solid #e2dfdd;
 }
@@ -459,7 +460,7 @@ header {
 }
 
 .hover-img-container div img {
-  border: 1px solid red;
+  border: 1px solid #e2dfdd;
  width: 7rem;
  height: 10rem;
  padding: 1.4rem 1rem;
@@ -467,7 +468,6 @@ header {
 
 .product-div-right {
   padding: 1.2rem;
-  border: 1px solid red;
 }
 
 .product-div-right .right-header {
@@ -567,6 +567,7 @@ header {
     width: 90%;
     right: 2rem;
   }
+  
 }
 
 @media (max-width: 576px) {
@@ -583,8 +584,11 @@ header {
     flex-direction: column;
     gap: 2rem;
   }
-  .hover-image-container {
+  .hover-img-container {
+    display: flex;
     flex-direction: row;
-    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
   }
 }

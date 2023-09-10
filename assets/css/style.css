@@ -315,22 +315,21 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.header .cart-items-container .sub-btn {
+.header .cart-items-container .sub-button .sub-btn {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 2rem;
   font-size: 1.7rem;
-  color: #010103;
-  background: transparent;
+  color: var(--white);
+  background: var(--main-color);
   cursor: pointer;
   border-radius: 8px;
-  border: var(--border);
+  border: none;
   font-family: Jost, sans-serif;
-  border: 1px solid #32323d;
 }
 .header .cart-items-container .sub-btn:hover {
   border: none;
-  background: var(--main-color);
+  background: var(--bg);
   color: var(--white);
 }
 .responsive-header-container {
@@ -908,7 +907,7 @@ header {
   padding: 5rem 2rem;
 }
 .blogs .box-container .box .content .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   color: #fff;
 }
@@ -920,7 +919,8 @@ header {
   color: var(--main-color);
   display: block;
   padding-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 2;
 }
 .blogs .box-container .box .content p {
   font-size: 1.6rem;

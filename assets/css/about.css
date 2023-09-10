@@ -323,17 +323,14 @@ header {
   display: inline-block;
   padding: 1rem 2rem;
   font-size: 1.7rem;
-  color: #010103;
-  background: transparent;
+  color: var(--white);
+  background: var(--main-color);
   cursor: pointer;
   border-radius: 8px;
-  border: var(--border);
   font-family: Jost, sans-serif;
-  border: 1px solid #32323d;
 }
 .header .cart-items-container .sub-btn:hover {
-  border: none;
-  background: var(--main-color);
+  background: var(--bg);
   color: var(--white);
 }
 .responsive-header-container {
@@ -684,7 +681,6 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
   margin-bottom: 5rem;
-
 }
 
 .blogs .box-container .box {
@@ -744,14 +740,15 @@ header {
 }
 .blogs .box-container .box .content ul li a i {
   padding: 1.2rem;
-  color: #a4a4a4;
+  color: #a7a7a7;
   font-size: 15px;
-  border: 1px solid #a4a4a4;
-  border-radius: 50%;
+  border: 1px solid #a7a7a7;
+  border-radius: 5px;
 }
 .blogs .box-container .box .content ul li a i:hover {
   color: var(--white);
   background-color: var(--main-color);
+  border: 1px solid var(--white);
 }
 
 /* about personal section end */
