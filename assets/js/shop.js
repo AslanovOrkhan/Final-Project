@@ -88,3 +88,24 @@ inputRange.forEach((input) => {
   });
 });
 // price filter end
+// modal section start
+const openModalIcon = document.querySelectorAll(".fa-eye");
+const modal = document.getElementById("myModal");
+const closeModal = modal.querySelector(".close");
+
+openModalIcon.forEach((eyeIcon) => {
+  eyeIcon.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+});
+
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+// modal section end

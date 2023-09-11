@@ -61,6 +61,7 @@ section {
   background: var(--main-color);
   cursor: pointer;
   border-radius: 5px;
+  border: var(--border);
   font-family: Jost, sans-serif;
 }
 .btn:hover {

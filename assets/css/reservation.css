@@ -61,10 +61,12 @@ section {
   background: var(--main-color);
   cursor: pointer;
   border-radius: 5px;
+  border: var(--border);
   font-family: Jost, sans-serif;
 }
 .btn:hover {
   background-color: var(--bg);
+  color: var(--white);
 }
 /* scroll top start */
 #progress {

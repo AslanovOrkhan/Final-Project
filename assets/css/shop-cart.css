@@ -57,10 +57,11 @@ section {
   display: inline-block;
   padding: 0.9rem 3rem;
   font-size: 1.7rem;
-  color: #fff;
+  color: var(--white);
   background: var(--main-color);
   cursor: pointer;
   border-radius: 5px;
+  border: var(--border);
   font-family: Jost, sans-serif;
 }
 .btn:hover {
