@@ -48,9 +48,9 @@ window.onload = calcScrollValue;
 // scroll top end
 // shop detail product area start
 const allHoverImages = document.querySelectorAll(
-  ".hover-img-container div img"
+  ".small-image div img"
 );
-const imgContainer = document.querySelector(".image-container");
+const imgContainer = document.querySelector(".img-container");
 window.addEventListener("DOMContentLoaded", () => {
   allHoverImages[0].parentElement.classList.add("active");
 });
@@ -67,3 +67,4 @@ function resetActiveImg() {
   });
 }
 // shop detail product area end
+
