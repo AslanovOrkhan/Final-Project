@@ -460,7 +460,6 @@ header {
   align-items: center;
   border-radius: 7px;
   gap: 2rem;
-
   padding: 2rem 4rem;
 }
 .shop-item .shop-icons {
@@ -676,6 +675,7 @@ input[type="range"]::-webkit-slider-thumb {
   transition: 0.1s;
 }
 /* shop area end */
+/* footer area start */
 .footer {
   background-image: url(/assets/images/pp-bg-3-1.jpeg);
   background-repeat: no-repeat;
