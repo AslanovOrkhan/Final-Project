@@ -57,11 +57,10 @@ section {
   display: inline-block;
   padding: 0.9rem 3rem;
   font-size: 1.7rem;
-  color: #fff;
+  color: var(--white);
   background: var(--main-color);
   cursor: pointer;
   border-radius: 5px;
-  border: var(--border);
   font-family: Jost, sans-serif;
 }
 .btn:hover {
@@ -323,18 +322,14 @@ header {
   display: inline-block;
   padding: 1rem 2rem;
   font-size: 1.7rem;
-  color: #010103;
-  background: transparent;
+  color: var(--white);
+  background: var(--main-color);
   cursor: pointer;
   border-radius: 8px;
-  border: var(--border);
   font-family: Jost, sans-serif;
-  border: 1px solid #32323d;
 }
 .header .cart-items-container .sub-btn:hover {
-  border: none;
-  background: var(--main-color);
-  color: var(--white);
+  background: var(--bg);
 }
 .responsive-header-container {
   position: absolute;

@@ -42,18 +42,22 @@
           ></a>
           <ul class="sub-menu">
             <li class="sub-item"><a href="blog.html">blog</a></li>
-            <li class="sub-item"><a href="blog detail.html">blog detail</a></li>
+            <li class="sub-item"><a href="blog-detail.html">blog detail</a></li>
             <li class="sub-item"><a href="chefs.html">chefs</a></li>
             <li class="sub-item"><a href="faq.html">fag</a></li>
-            </ul>
+          </ul>
         </li>
         <li class="menu-item">
           <a href="shop.html">shop <i class="fas fa-angle-down"></i></a>
           <ul class="sub-menu">
             <li class="sub-item"><a href="shop.html">shop</a></li>
-            <li class="sub-item"><a href="shop-detail.html">shop details</a></li>
+            <li class="sub-item">
+              <a href="shop-detail.html">shop details</a>
+            </li>
             <li class="sub-item"><a href="shop-cart.html">shop cart</a></li>
-            <li class="sub-item"><a href="shop-checkout.html">shop checkout</a></li>
+            <li class="sub-item">
+              <a href="shop-checkout.html">shop checkout</a>
+            </li>
           </ul>
         </li>
         <li class="menu-item">
@@ -150,23 +154,29 @@
                   <a href="blog.html">blog</a>
                 </li>
                 <li class="responsive-sub-item">
-                  <a href="blog detail.html">blog detail</a>
+                  <a href="blog-detail.html">blog detail</a>
                 </li>
                 <li class="responsive-sub-item">
                   <a href="chef.html">chefs</a>
                 </li>
                 <li class="responsive-sub-item"><a href="faq.html">fag</a></li>
-                </ul>
+              </ul>
             </li>
             <li class="responsive-menu-item">
               <a href="#">shop <i class="fas fa-angle-down"></i></a>
               <ul class="responsive-sub-menu">
-                <li class="responsive-sub-item"><a href="shop.html">shop</a></li>
+                <li class="responsive-sub-item">
+                  <a href="shop.html">shop</a>
+                </li>
                 <li class="responsive-sub-item">
                   <a href="shop-detail.html">shop details</a>
                 </li>
-                <li class="responsive-sub-item"><a href="shop-cart.html">shop cart</a></li>
-                <li class="responsive-sub-item"><a href="shop-checkout.html">checkout</a></li>
+                <li class="responsive-sub-item">
+                  <a href="shop-cart.html">shop cart</a>
+                </li>
+                <li class="responsive-sub-item">
+                  <a href="shop-checkout.html">checkout</a>
+                </li>
               </ul>
             </li>
             <li class="responsive-menu-item">
@@ -514,65 +524,41 @@
               </li>
             </ul>
           </div>
-          <div class="popular-coffee">
-            <h2>Categories</h2>
-            <div class="coffee-item-container">
-              <div class="item">
-                <div class="coffee-img">
-                  <img src="/assets/images/b-sm-1.png" alt="" />
-                </div>
-                <div class="coffee-title">
-                  <h5>
-                    <a href="#">10 Reasons To Do A Digital Detox Challenge</a>
-                  </h5>
-                  <a href="#">
-                    <i class="fas fa-calendar-alt"></i>
-                    24th March 2021
-                  </a>
-                </div>
+          <div class="filter">
+            <div>
+              <h2>Price Range</h2>
+            </div>
+            <div class="price-input">
+              <div class="field">
+                <span>Min</span>
+                <input type="number" class="min-input" value="2500" step="10" />
               </div>
-              <div class="item">
-                <div class="coffee-img">
-                  <img src="/assets/images/b-sm-1.png" alt="" />
-                </div>
-                <div class="coffee-title">
-                  <h5>
-                    <a href="#">10 Reasons To Do A Digital Detox Challenge</a>
-                  </h5>
-                  <a href="#">
-                    <i class="fas fa-calendar-alt"></i>
-                    24th March 2021
-                  </a>
-                </div>
+              <div class="seperator">--</div>
+              <div class="field">
+                <span>Max</span>
+                <input type="number" class="max-input" value="7500" step="10" />
               </div>
-              <div class="item">
-                <div class="coffee-img">
-                  <img src="/assets/images/b-sm-1.png" alt="" />
-                </div>
-                <div class="coffee-title">
-                  <h5>
-                    <a href="#">10 Reasons To Do A Digital Detox Challenge</a>
-                  </h5>
-                  <a href="#">
-                    <i class="fas fa-calendar-alt"></i>
-                    24th March 2021
-                  </a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="coffee-img">
-                  <img src="/assets/images/b-sm-1.png" alt="" />
-                </div>
-                <div class="coffee-title">
-                  <h5>
-                    <a href="#">10 Reasons To Do A Digital Detox Challenge</a>
-                  </h5>
-                  <a href="#">
-                    <i class="fas fa-calendar-alt"></i>
-                    24th March 2021
-                  </a>
-                </div>
-              </div>
+            </div>
+            <div class="slider">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="input-range">
+              <input
+                type="range"
+                class="range-min"
+                min="0"
+                max="10000"
+                value="2500"
+                step="100"
+              />
+              <input
+                type="range"
+                class="range-max"
+                min="0"
+                max="10000"
+                value="7500"
+                step="100"
+              />
             </div>
           </div>
         </div>
