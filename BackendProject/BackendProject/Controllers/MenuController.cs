@@ -2,11 +2,11 @@
 
 namespace BackendProject.Controllers
 {
-    public class MenuController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
+	public class MenuController : Controller
+	{
+		public IActionResult Index()
+		{
+			return View();
+		}
+	}
 }

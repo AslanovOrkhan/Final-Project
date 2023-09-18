@@ -1,217 +1,222 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+	ViewData["Title"] = "Menu Page";
+}
+links{
+<link rel="stylesheet" href="~/assets/css/menu.css" />
+
 }
 <!-- about home start -->
 <section class="about-home">
-    <div class="about-header">
-        <h2>cafena menu</h2>
-        <div>
-            <ul>
-                <li class="breadcrumb-begin">
-                    <a href="index.html">home</a>
-                </li>
-                <li></li>
-                <li class="breadcrumb-end">
-                    <a href="menu.html">menu</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+	<div class="about-header">
+		<h2>cafena menu</h2>
+		<div>
+			<ul>
+				<li class="breadcrumb-begin">
+					<a href="index.html">home</a>
+				</li>
+				<li></li>
+				<li class="breadcrumb-end">
+					<a href="menu.html">menu</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </section>
 <!-- about  home end -->
 <!-- menu product filter start -->
 
 <div class="bg-menu">
-    <div class="menu-title">
-        <section>menu</section>
-        <h2>CAFENA POPULAR MENU</h2>
-        <hr />
-    </div>
-    <div id="categories">
-        <button class="categoryBtn" data-category="all">all</button>
-        <button class="categoryBtn" data-category="Chocolate">Chocolate</button>
-        <button class="categoryBtn" data-category="Coffee">Coffee</button>
-        <button class="categoryBtn" data-category="Sandwiches">
-            Sandwiches
-        </button>
-        <button class="categoryBtn" data-category="Sweets">Sweets</button>
-        <button class="categoryBtn" data-category="Black Tea">Black Tea</button>
-        <button class="categoryBtn" data-category="Green Tea">Green Tea</button>
-    </div>
-    <div class="menu-flex">
-        <div class="menu1" data-category="Chocolate">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-1.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$6.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Chocolate">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-2.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$7.99</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Green Tea">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-3.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Sweets">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-4.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Green Tea">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-5.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Sweets">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-6.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Chocolate">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-2.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Chocolate">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-1.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Coffee">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-1.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Coffee">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-1.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Sandwiches">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-3.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Sandwiches">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-1.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Black Tea">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-1.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-        <div class="menu1" data-category="Black Tea">
-            <div class="small-image">
-                <img src="/assets/images/menu-2-2.png" alt="" />
-            </div>
-            <div>
-                <h4>caffee latter</h4>
-            </div>
-            <div class="line"></div>
-            <div>
-                <h4>$3.86</h4>
-            </div>
-        </div>
-    </div>
-    <div class="menu-link">
-        <a href="#">view menu</a>
-    </div>
+	<div class="menu-title">
+		<section>menu</section>
+		<h2>CAFENA POPULAR MENU</h2>
+		<hr />
+	</div>
+	<div id="categories">
+		<button class="categoryBtn" data-category="all">all</button>
+		<button class="categoryBtn" data-category="Chocolate">Chocolate</button>
+		<button class="categoryBtn" data-category="Coffee">Coffee</button>
+		<button class="categoryBtn" data-category="Sandwiches">
+			Sandwiches
+		</button>
+		<button class="categoryBtn" data-category="Sweets">Sweets</button>
+		<button class="categoryBtn" data-category="Black Tea">Black Tea</button>
+		<button class="categoryBtn" data-category="Green Tea">Green Tea</button>
+	</div>
+	<div class="menu-flex">
+		<div class="menu1" data-category="Chocolate">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-1.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$6.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Chocolate">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-2.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$7.99</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Green Tea">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-3.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Sweets">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-4.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Green Tea">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-5.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Sweets">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-6.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Chocolate">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-2.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Chocolate">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-1.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Coffee">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-1.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Coffee">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-1.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Sandwiches">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-3.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Sandwiches">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-1.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Black Tea">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-1.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+		<div class="menu1" data-category="Black Tea">
+			<div class="small-image">
+				<img src="~/assets/images/menu-2-2.png" alt="" />
+			</div>
+			<div>
+				<h4>caffee latter</h4>
+			</div>
+			<div class="line"></div>
+			<div>
+				<h4>$3.86</h4>
+			</div>
+		</div>
+	</div>
+	<div class="menu-link">
+		<a href="#">view menu</a>
+	</div>
 </div>
 <!-- menu product filter end -->
-
+script{
+<script src="~/assets/js/menu.js"></script>
+}

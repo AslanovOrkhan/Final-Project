@@ -1,0 +1,357 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\about.css",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\blog-detail.css",
+      "PackagePath": "staticwebassets\\assets\\css\\blog-detail.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\blog.css",
+      "PackagePath": "staticwebassets\\assets\\css\\blog.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\chef.css",
+      "PackagePath": "staticwebassets\\assets\\css\\chef.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\faq.css",
+      "PackagePath": "staticwebassets\\assets\\css\\faq.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\menu.css",
+      "PackagePath": "staticwebassets\\assets\\css\\menu.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\reservation.css",
+      "PackagePath": "staticwebassets\\assets\\css\\reservation.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\shop-cart.css",
+      "PackagePath": "staticwebassets\\assets\\css\\shop-cart.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\shop-checkout.css",
+      "PackagePath": "staticwebassets\\assets\\css\\shop-checkout.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\shop-detail.css",
+      "PackagePath": "staticwebassets\\assets\\css\\shop-detail.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\shop.css",
+      "PackagePath": "staticwebassets\\assets\\css\\shop.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\about-bg-3-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\about-bg-3-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\about-img-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-img-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\about-img-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-img-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\author-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\author-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\b-sm-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\b-sm-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\b-sm-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\b-sm-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\b-sm-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\b-sm-3.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\b-sm-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\b-sm-4.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\blog-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\blog-2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\blog-3.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\blog-author-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-author-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\blog-post-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-post-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\c-author-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\c-author-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\c-author-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\c-author-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\c-author-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\c-author-3.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\ci-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ci-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\ci-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ci-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\ci-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ci-3.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\f-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\f-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\f-2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\f-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\f-3.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\f-3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\ft-map-marker.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ft-map-marker.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\ft-phone.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ft-phone.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\hero-img-3-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-img-3-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\hero-shape-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-shape-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\hero-shape-2-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\hero-shape-2-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\logo-black.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-black.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\menu-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\menu-2-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-2-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\menu-2-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-2-3.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\menu-2-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-2-4.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\menu-2-5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-2-5.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\menu-2-6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-2-6.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\pp-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pp-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\pp-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pp-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\pp-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pp-3.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\pp-bg-3-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\pp-bg-3-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\r-post-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\r-post-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\r-post-2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\r-post-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-11.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-3.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-4.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-5.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-6.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-7.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\s-p-8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\s-p-8.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\t-p-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\t-p-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\t-p-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\t-p-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\t-quote.png",
+      "PackagePath": "staticwebassets\\assets\\images\\t-quote.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\team-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\team-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\team-2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\team-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\tm-author.png",
+      "PackagePath": "staticwebassets\\assets\\images\\tm-author.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\wcu-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\wcu-1.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\wcu-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\wcu-2.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\about.js",
+      "PackagePath": "staticwebassets\\assets\\js\\about.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\blog-detail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\blog-detail.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\blog.js",
+      "PackagePath": "staticwebassets\\assets\\js\\blog.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\chef.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chef.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\contact.js",
+      "PackagePath": "staticwebassets\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\faq.js",
+      "PackagePath": "staticwebassets\\assets\\js\\faq.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\menu.js",
+      "PackagePath": "staticwebassets\\assets\\js\\menu.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\reservation.js",
+      "PackagePath": "staticwebassets\\assets\\js\\reservation.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\shop-cart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shop-cart.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\shop-checkout.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shop-checkout.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\shop-detail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shop-detail.js"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\js\\shop.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BackendProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BackendProject.props",
+      "PackagePath": "build\\BackendProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BackendProject.props",
+      "PackagePath": "buildMultiTargeting\\BackendProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BackendProject.props",
+      "PackagePath": "buildTransitive\\BackendProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
