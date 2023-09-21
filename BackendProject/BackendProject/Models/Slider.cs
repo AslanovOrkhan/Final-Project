@@ -1,4 +1,6 @@
-﻿namespace BackendProject.Models;
+﻿using Microsoft.Build.Framework;
+
+namespace BackendProject.Models;
 
 public class Slider
 {

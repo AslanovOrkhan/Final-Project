@@ -1,7 +1,4 @@
-﻿using BackendProject.Contexts;
-using BackendProject.Models;
-using Microsoft.AspNetCore.Mvc;
-
+﻿
 namespace BackendProject.Controllers
 {
     public class HomeController : Controller
@@ -15,7 +12,14 @@ namespace BackendProject.Controllers
         public IActionResult Index()
         {
             List<Slider> sliders = _context.Sliders.ToList();
-            return View(sliders);
+            List<Service> services = _context.Services.ToList();
+
+            HomeViewModel homeViewModel = new()
+            {
+                Sliders = sliders,
+                Services = services
+            };
+            return View(homeViewModel);
         }
     }
 }

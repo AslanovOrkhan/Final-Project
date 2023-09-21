@@ -1,5 +1,5 @@
 ﻿@using BackendProject.Models;
-@model List<Slider>
+@model HomeViewModel
 @{
 	Layout = null;
 }
@@ -229,45 +229,23 @@
 	<!-- cart section start -->
 
 	<div class="bg-service">
-		<div class="service-one">
-			<img src="~/assets/images/f-1.jpeg" alt="" />
-			<div class="overlay">
-				<div class="over-txt">
-					<span>01</span>
-					<h4>Best Coffee flavour</h4>
-					<p>
-						Curabitur semper erat a lacusey sedn <br />
-						consequat, sit ametey.
-					</p>
+		@foreach (var serviceItem in Model.Services)
+		{
+
+			<div class="service-one">
+				<img src="~/assets/images/@serviceItem.Image" alt="" />
+				<div class="overlay">
+					<div class="over-txt">
+						<span>@serviceItem.Number</span>
+						<h4>@serviceItem.Title</h4>
+						<p>
+							@serviceItem.Description
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="service-one">
-			<img src="~/assets/images/f-2.jpeg" alt="" />
-			<div class="overlay">
-				<div class="over-txt">
-					<span>02</span>
-					<h4>Place to Get Lost</h4>
-					<p>
-						Curabitur semper erat a lacusey sedn <br />
-						consequat, sit ametey.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="service-one">
-			<img src="~/assets/images/f-3.jpeg" alt="" />
-			<div class="overlay">
-				<div class="over-txt">
-					<span>03</span>
-					<h4>Proper Roesting</h4>
-					<p>
-						Curabitur semper erat a lacusey sedn <br />
-						consequat, sit ametey.
-					</p>
-				</div>
-			</div>
-		</div>
+		}
+
 	</div>
 
 	<!-- cart section end -->
@@ -563,14 +541,14 @@
 		</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				@foreach (var sliderItem in Model)
+				@foreach (var sliderItem in Model.Sliders)
 				{
 
 					<div class="swiper-slide">
 						<div class="box">
 							<img src="~/assets/images/t-quote.png" alt="" class="quote" />
 							<p>
-							@sliderItem.Description
+								@sliderItem.Description
 							</p>
 							<img src="~/assets/images/@sliderItem.UserImage" alt="" class="user" />
 							<h4>@sliderItem.UserName</h4>
