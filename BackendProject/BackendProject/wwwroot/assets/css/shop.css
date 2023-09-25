@@ -564,6 +564,7 @@ header {
   border: 1px solid #e2dfdd;
   padding: 1rem 2rem;
   border-radius: 5px;
+  cursor:pointer;
 }
 .categories ul li a {
   color: #6c6c6c;
@@ -677,6 +678,9 @@ input[type="range"]::-webkit-slider-thumb {
   background: var(--main-color);
   color: var(--white);
   transition: 0.1s;
+}
+.stars i {
+  font-size: 1.5rem;
 }
 /* shop area end */
 /* modal section start */

@@ -19,7 +19,19 @@ namespace BackendProject.Controllers
                 Sliders = sliders,
                 Services = services
             };
-            return View(homeViewModel);
+
+			HttpContext.Session.SetString("name", "Orkhan");
+			Response.Cookies.Append("surname", "Aslanov", new CookieOptions
+			{
+			MaxAge = TimeSpan.FromSeconds(30)
+			});
+			return View(homeViewModel);
         }
-    }
+		public IActionResult Test()
+		{
+			var name = HttpContext.Session.GetString("name");
+			var surname = Request.Cookies["surname"];
+			return Content(name + " " + surname);
+		}
+	}
 }

@@ -1,11 +1,13 @@
-﻿@{
+﻿@model ShopViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
 	ViewData["Title"] = "Shop Page";
 }
 link{
-		<link rel="stylesheet" href="~/assets/css/shop.css" />
+<link rel="stylesheet" href="~/assets/css/shop.css" />
 
-}
-<!-- about home start -->
+}    <!-- about home start -->
 <section class="about-home">
 	<div class="about-header">
 		<h2>Cafena Product</h2>
@@ -28,276 +30,34 @@ link{
 	<div class="blog-container">
 		<div class="shop-product-container">
 			<div class="shop-product">
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
+				@foreach (var product in Model.Products)
+				{
+					<div class="shop-item">
+						<div class="shop-icons">
+							<i class="fas fa-shopping-basket"></i>
+							<i class="fas fa-heart"></i>
+							<i class="fas fa-eye"></i>
+						</div>
+						<div class="product-img">
+							<img src="~/assets/images/@product.Image" alt="" />
+						</div>
+						<div class="title">
+							<h4>ROSTED COFFEE</h4>
+							<h6>@product.Name</h6>
+							<span> PRICE - $@product.Price </span>
+							<span class="stars">
+								@for (var i = 0; i < product.Rating; i++)
+								{
+
+									<i class="fas fa-star gold"></i>
+								}
+
+							</span>
+						</div>
 					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
-				<div class="shop-item">
-					<div class="shop-icons">
-						<i class="fas fa-shopping-basket"></i>
-						<i class="fas fa-heart"></i>
-						<i class="fas fa-eye"></i>
-					</div>
-					<div class="product-img">
-						<img src="~/assets/images/pp-1.png" alt="" />
-					</div>
-					<div class="title">
-						<h4>ROSTED COFFEE</h4>
-						<h6>VICARAGUA COFFEE BEANS</h6>
-						<span>
-							PRICE - $325.00 /
-							<span> <del>$348</del></span>
-						</span>
-					</div>
-				</div>
+
+				}
+
 			</div>
 			<div class="pagination">
 				<ul>
@@ -360,29 +120,18 @@ link{
 				<h2>Categories</h2>
 				<ul>
 					<li>
-						<a href="#">Burger</a>
-						<span>04</span>
+						<a href="#">All</a>
+						<span>(@ViewBag.ProductsCount)</span>
 					</li>
-					<li>
-						<a href="#">Burger</a>
-						<span>04</span>
-					</li>
-					<li>
-						<a href="#">Burger</a>
-						<span>04</span>
-					</li>
-					<li>
-						<a href="#">Burger</a>
-						<span>04</span>
-					</li>
-					<li>
-						<a href="#">Burger</a>
-						<span>04</span>
-					</li>
-					<li>
-						<a href="#">Burger</a>
-						<span>04</span>
-					</li>
+					@foreach (var category in Model.Categories)
+					{
+						<li>
+							<a asp-route-categoryId="@category.Id" asp-action="index">@category.Name</a>
+							<span>(@category.Products.Count)</span>
+						</li>
+
+					}
+
 				</ul>
 			</div>
 			<div class="filter">

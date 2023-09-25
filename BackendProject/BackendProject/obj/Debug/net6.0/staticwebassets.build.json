@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MD4I1PI6mXJWD1oAzP/C6Nu9FSpqKExD6LOBFxizTlo=",
+  "Hash": "DiaLpJ9Y5HSrYso9LfvXqZJPPlrXQZOoEZ3Gf8Mo+5A=",
   "Source": "BackendProject",
   "BasePath": "_content/BackendProject",
   "Mode": "Default",
@@ -1768,6 +1768,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
     },
     {
+      "Identity": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\255e71a8-de41-40ce-ad2a-95fa628fbace-r-post-1.jpeg",
+      "SourceId": "BackendProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\",
+      "BasePath": "_content/BackendProject",
+      "RelativePath": "assets/images/255e71a8-de41-40ce-ad2a-95fa628fbace-r-post-1.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\255e71a8-de41-40ce-ad2a-95fa628fbace-r-post-1.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\about-bg-3-1.jpeg",
       "SourceId": "BackendProject",
       "SourceType": "Discovered",
@@ -2004,23 +2021,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\c40c2653-cf22-4967-95e9-d55fa4508c84-blog-1.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\c760a6fa-d4cd-49c1-8195-1834b150d4de-f-1.jpeg",
-      "SourceId": "BackendProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\",
-      "BasePath": "_content/BackendProject",
-      "RelativePath": "assets/images/c760a6fa-d4cd-49c1-8195-1834b150d4de-f-1.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\c760a6fa-d4cd-49c1-8195-1834b150d4de-f-1.jpeg"
     },
     {
       "Identity": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\c-author-1.png",
