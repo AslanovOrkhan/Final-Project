@@ -1,14 +1,18 @@
 ﻿using BackendProject.Areas.Admin.ViewModels;
 using BackendProject.Utils;
 using BackendProject.Utils.Enums;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NuGet.ContentModel;
+using System.Data;
 using System.Linq;
 
 namespace BackendProject.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "Admin")]
+
 	public class ServiceController : Controller
 	{
 		private readonly AppDbContext _appDbContext;

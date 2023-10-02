@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace BackendProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles = "Admin, Moderator")]
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;

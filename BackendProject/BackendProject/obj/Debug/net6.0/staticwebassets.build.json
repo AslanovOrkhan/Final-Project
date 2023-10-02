@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DiaLpJ9Y5HSrYso9LfvXqZJPPlrXQZOoEZ3Gf8Mo+5A=",
+  "Hash": "WAhGZNWB1k02Kzx6Q1KL+9gnTsGANOz2OADLfs/9LSE=",
   "Source": "BackendProject",
   "BasePath": "_content/BackendProject",
   "Mode": "Default",
@@ -1853,6 +1853,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\author-1.jpeg"
     },
     {
+      "Identity": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\best-coffe-1.jpeg",
+      "SourceId": "BackendProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\",
+      "BasePath": "_content/BackendProject",
+      "RelativePath": "assets/images/best-coffe-1.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\best-coffe-1.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\blog-1.jpeg",
       "SourceId": "BackendProject",
       "SourceType": "Discovered",
@@ -2973,6 +2990,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\shop-detail.js"
+    },
+    {
+      "Identity": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\Password\\template.html",
+      "SourceId": "BackendProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\",
+      "BasePath": "_content/BackendProject",
+      "RelativePath": "assets/Password/template.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Password\\template.html"
     }
   ]
 }

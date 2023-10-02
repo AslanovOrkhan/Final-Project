@@ -678,6 +678,9 @@ input[type="range"]::-webkit-slider-thumb {
   color: var(--white);
   transition: 0.1s;
 }
+.stars i {
+  font-size: 1.5rem;
+}
 /* shop area end */
 /* modal section start */
 .modal {

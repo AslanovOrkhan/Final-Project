@@ -13,11 +13,14 @@ namespace BackendProject.Controllers
         {
             List<Slider> sliders = _context.Sliders.ToList();
             List<Service> services = _context.Services.ToList();
+            List<Product> products = _context.Products.OrderByDescending(p => p.Rating).Take(4).ToList();
+			 
 
-            HomeViewModel homeViewModel = new()
+			HomeViewModel homeViewModel = new()
             {
                 Sliders = sliders,
-                Services = services
+                Services = services,
+                Products=products
             };
 
 			HttpContext.Session.SetString("name", "Orkhan");

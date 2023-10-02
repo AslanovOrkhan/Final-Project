@@ -361,6 +361,10 @@
       "PackagePath": "staticwebassets\\assets\\Admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\Password\\template.html",
+      "PackagePath": "staticwebassets\\assets\\Password\\template.html"
+    },
+    {
       "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\css\\about.css",
       "PackagePath": "staticwebassets\\assets\\css\\about.css"
     },
@@ -447,6 +451,10 @@
     {
       "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\b-sm-4.png",
       "PackagePath": "staticwebassets\\assets\\images\\b-sm-4.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\best-coffe-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\best-coffe-1.jpeg"
     },
     {
       "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\blog-1.jpeg",

@@ -6,6 +6,8 @@ using System.Data;
 namespace BackendProject.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "Admin")]
+
 	public class SliderController : Controller
 	{
 		private readonly AppDbContext _context;
@@ -13,18 +15,26 @@ namespace BackendProject.Areas.Admin.Controllers
 		{
 			_context = context;
 		}
+
+		[Authorize(Roles = "Admin,Moderator")]
+
 		public IActionResult Index()
 		{
 			List<Slider> sliders = _context.Sliders.ToList();
 			ViewBag.Count = sliders.Count;
 			return View(sliders);
 		}
+
+		[Authorize(Roles = "Admin")]
+
 		public IActionResult Create()
 		{
 			return View();
 		}
 
 		[HttpPost]
+		[Authorize(Roles = "Admin")]
+
 		public IActionResult Create(Slider slider)
 		{
 			if (!ModelState.IsValid)
@@ -35,6 +45,8 @@ namespace BackendProject.Areas.Admin.Controllers
 			return RedirectToAction(nameof(Index));
 		}
 
+		[Authorize(Roles = "Admin,Moderator")]
+
 		public IActionResult Detail(int id)
 		{
 			Slider? slider = _context.Sliders.AsNoTracking().FirstOrDefault(s => s.Id == id);
@@ -44,6 +56,8 @@ namespace BackendProject.Areas.Admin.Controllers
 
 			return View(slider);
 		}
+
+		[Authorize(Roles = "Admin")]
 
 		public IActionResult Delete(int id)
 		{
@@ -58,6 +72,8 @@ namespace BackendProject.Areas.Admin.Controllers
 		}
 		[HttpPost]
 		[ActionName("Delete")]
+		[Authorize(Roles = "Admin")]
+
 		public IActionResult DeleteSlider(int id)
 		{
 			Slider? slider = _context.Sliders.FirstOrDefault(s => s.Id == id);
@@ -69,7 +85,7 @@ namespace BackendProject.Areas.Admin.Controllers
 
 			return RedirectToAction(nameof(Index));
 		}
-		//[Authorize(Roles = "Admin")]
+		[Authorize(Roles = "Admin")]
 		public IActionResult Update(int id)
 		{
 			Slider? slider = _context.Sliders.FirstOrDefault(s => s.Id == id);
@@ -80,7 +96,7 @@ namespace BackendProject.Areas.Admin.Controllers
 		}
 
 		[HttpPost]
-		//[Authorize(Roles = "Admin")]
+		[Authorize(Roles = "Admin")]
 		public IActionResult Update(Slider slider, int id)
 		{
 			Slider? dbSlider = _context.Sliders.AsNoTracking().FirstOrDefault(s => s.Id == id);
