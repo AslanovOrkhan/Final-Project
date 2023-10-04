@@ -1,12 +1,13 @@
-﻿@model Dictionary<string,string>
+﻿@model HeaderVM
 @{
 	Layout = null;
+	double endTotal = 0;
 }
 
 <!-- header section start -->
 <header class="header">
 	<a href="#" class="logo">
-		<img src="~/assets/images/@Model["HeaderLogo"]" alt="" />
+		<img src="~/assets/images/@Model.Settings["HeaderLogo"]" alt="" />
 	</a>
 	<!-- header navbar -->
 	<ul class="navbar">
@@ -54,7 +55,8 @@
 		</div>
 		<div>
 			<i class="fa solid fa-basket-shopping" id="cart-btn"></i>
-			<span class="quantity">0</span>
+			<span class="quantity">@Model.Count</span>
+			<span style="display: none;" class="quantity2">@Model.Count</span>
 		</div>
 
 		<div>
@@ -68,41 +70,22 @@
 	</div>
 	<!-- header cart items -->
 	<div class="cart-items-container">
-		<div class="cart-item">
-			<span class="fas fa-times"> </span>
-			<img src="~/assets/images/s-p-11.png" alt="" />
-			<div class="content">
-				<h3>cart item 01</h3>
-				<div class="price">$15.99/-</div>
+		@foreach (var item in Model.Basket.BasketProducts)
+		{
+			<div class="cart-item">
+				<span data-id="@item.Id" data-quantity="@item.Quantity" class="fas fa-times"></span>
+				<img src="~/assets/images/@item.Image" alt="" />
+				<div class="content">
+					<h3>@item.Name</h3>
+					<div class="price">$@item.Price/-</div>
+				</div>
 			</div>
-		</div>
-		<div class="cart-item">
-			<span class="fas fa-times"> </span>
-			<img src="~/assets/images/s-p-4.png" alt="" />
-			<div class="content">
-				<h3>cart item 02</h3>
-				<div class="price">$15.99/-</div>
-			</div>
-		</div>
-		<div class="cart-item">
-			<span class="fas fa-times"> </span>
-			<img src="~/assets/images/s-p-5.png" alt="" />
-			<div class="content">
-				<h3>cart item 03</h3>
-				<div class="price">$15.99/-</div>
-			</div>
-		</div>
-		<div class="cart-item">
-			<span class="fas fa-times"> </span>
-			<img src="~/assets/images/s-p-7.png" alt="" />
-			<div class="content">
-				<h3>cart item 04</h3>
-				<div class="price">$15.99/-</div>
-			</div>
-		</div>
+
+			endTotal += item.Total;
+		}
 		<div class="sub-total">
 			<span> SUB TOTAL:</span>
-			<span>$87.00</span>
+			<span>$@endTotal</span>
 		</div>
 		<div class="sub-button">
 			<a href="#" class="sub-btn">cehckout now</a>
@@ -165,3 +148,7 @@
 	</div>
 </header>
 <!-- header section end -->
+script{
+<script src="~/assets/js/shop.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.30/sweetalert2.all.min.js"></script>
+}

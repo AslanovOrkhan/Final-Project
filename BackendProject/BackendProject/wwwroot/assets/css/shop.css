@@ -451,6 +451,8 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1.2rem;
+/*  width:100%;
+*/
 }
 .shop-item {
   border: 1px solid #e2dfdd;
@@ -459,8 +461,9 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  gap: 2rem;
-  padding: 2rem 4rem;
+  gap: 1rem;
+  padding: 2rem 2rem;
+  width:32%;
 }
 .shop-item .shop-icons {
   display: flex;
@@ -507,6 +510,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width:30%;
 }
 .shop-nav .search {
   border: 1px solid #e2dfdd;

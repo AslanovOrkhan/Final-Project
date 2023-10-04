@@ -16,6 +16,8 @@ public class AppDbContext : IdentityDbContext<AppUser>
     public DbSet<Product> Products { get; set; } = null!;
     public DbSet<Category> Categories { get; set; } = null!;
 	public DbSet<Setting> Settings { get; set; } = null!;
+	public DbSet<Basket> Baskets { get; set; }
+	public DbSet<BasketProduct> BasketProducts { get; set; }
 
 
 	public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

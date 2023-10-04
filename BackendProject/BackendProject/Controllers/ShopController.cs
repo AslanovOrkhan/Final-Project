@@ -1,5 +1,5 @@
-﻿using BackendProject.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using BackendProject.ViewModels.BasketViewModels;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace BackendProject.Controllers
@@ -7,10 +7,12 @@ namespace BackendProject.Controllers
 	public class ShopController : Controller
 	{
 		private readonly AppDbContext _context;
+		private readonly UserManager<AppUser> _userManager;
 
-		public ShopController(AppDbContext context)
+		public ShopController(AppDbContext context, UserManager<AppUser> userManager)
 		{
 			_context = context;
+			_userManager = userManager;
 		}
 
 		public async Task<IActionResult> Index(int? categoryId)
@@ -35,9 +37,39 @@ namespace BackendProject.Controllers
 		{
 			return View();
 		}
-		public IActionResult Cart()
+		public async Task<IActionResult> Cart()
 		{
-			return View();
+			AppUser user = await _userManager.GetUserAsync(User);
+
+			if (user == null) return Unauthorized();
+			var basket = await _context.Baskets
+			   .Include(m => m.BasketProducts)
+			   .ThenInclude(m => m.Product)
+			   .Include(m => m.BasketProducts)
+			   .ThenInclude(m => m.Product)
+			   .FirstOrDefaultAsync(m => m.AppUserId == user.Id);
+
+			BasketListVM model = new();
+
+			if (basket == null) return View(model);
+
+			foreach (var dbBasketProduct in basket.BasketProducts)
+			{
+				BasketProductVM basketProduct = new BasketProductVM
+				{
+					Id = dbBasketProduct.Id,
+					ProductId = dbBasketProduct.ProductId,
+					Name = dbBasketProduct.Product.Name,
+					Image = dbBasketProduct.Product.Image,
+					Quantity = dbBasketProduct.Quantity,
+					Price = dbBasketProduct.Product.Price,
+					Total = (dbBasketProduct.Product.Price * dbBasketProduct.Quantity),
+				};
+
+				model.BasketProducts.Add(basketProduct);
+			}
+
+			return View(model);
 		}
 		public IActionResult Checkout()
 		{

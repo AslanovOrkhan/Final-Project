@@ -66,14 +66,19 @@ const modal = document.getElementById("myModal");
 const closeModal = modal.querySelector(".close");
 
 openModalIcon.forEach((eyeIcon) => {
-  eyeIcon.addEventListener("click", () => {
-    modal.style.display = "block";
-  });
+    eyeIcon.addEventListener("click", () => {
+        modal.style.display = "block";
+    });
 });
 
 closeModal.addEventListener("click", () => {
-  modal.style.display = "none";
+    modal.style.display = "none";
 });
 
-
+closeModal.addEventListener("click", (event) => {
+    event.preventDefault();
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
 // modal section end

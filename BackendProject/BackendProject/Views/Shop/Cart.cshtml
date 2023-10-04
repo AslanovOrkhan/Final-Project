@@ -1,9 +1,13 @@
-﻿@{
+﻿@model BasketListVM
+
+@{
 	ViewData["Title"] = "Shop Cart Page";
+
+	double endTotal = 0;
 }
 links{
 <link rel="stylesheet" href="~/assets/css/shop-cart.css" />
-	
+
 }
 
 
@@ -40,97 +44,32 @@ links{
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>
-						<i class="far fa-times-circle"></i>
-					</td>
-					<td>
-						<img src="~/assets/images/s-p-2.png" alt="" />
-					</td>
-					<td>ESPRESSO RISTRETTO</td>
-					<td>$130</td>
-					<td>
-						<input type="number" value="1" />
-					</td>
-					<td>$260</td>
-				</tr>
-				<tr>
-					<td>
-						<i class="far fa-times-circle"></i>
-					</td>
-					<td>
-						<img src="~/assets/images/s-p-2.png" alt="" />
-					</td>
-					<td>ESPRESSO RISTRETTO</td>
-					<td>$130</td>
-					<td>
-						<input type="number" value="1" />
-					</td>
-					<td>$260</td>
-				</tr>
-				<tr>
-					<td>
-						<i class="far fa-times-circle"></i>
-					</td>
-					<td>
-						<img src="~/assets/images/s-p-2.png" alt="" />
-					</td>
-					<td>ESPRESSO RISTRETTO</td>
-					<td>$130</td>
-					<td>
-						<input type="number" value="1" />
-					</td>
-					<td>$260</td>
-				</tr>
-				<tr>
-					<td>
-						<i class="far fa-times-circle"></i>
-					</td>
-					<td>
-						<img src="~/assets/images/s-p-2.png" alt="" />
-					</td>
-					<td>ESPRESSO RISTRETTO</td>
-					<td>$130</td>
-					<td>
-						<input type="number" value="1" />
-					</td>
-					<td>$260</td>
-				</tr>
-				<tr>
-					<td>
-						<i class="far fa-times-circle"></i>
-					</td>
-					<td>
-						<img src="~/assets/images/s-p-2.png" alt="" />
-					</td>
-					<td>ESPRESSO RISTRETTO</td>
-					<td>$130</td>
-					<td>
-						<input type="number" value="1" />
-					</td>
-					<td>$260</td>
-				</tr>
-				<tr>
-					<td>
-						<i class="far fa-times-circle"></i>
-					</td>
-					<td>
-						<img src="~/assets/images/s-p-2.png" alt="" />
-					</td>
-					<td>ESPRESSO RISTRETTO</td>
-					<td>$130</td>
-					<td>
-						<input type="number" value="1" />
-					</td>
-					<td>$260</td>
-				</tr>
+				@foreach (var item in Model.BasketProducts)
+				{
+					<tr>
+						<td>
+							<i data-id="@item.Id" data-quantity="@item.Quantity" class="far fa-times-circle"></i>
+						</td>
+						<td>
+							<img src="~/assets/images/@item.Image" alt="" />
+						</td>
+						<td>@item.Name</td>
+						<td>$@item.Price</td>
+						<td>
+							<input disabled value="@item.Quantity" />
+						</td>
+						<td>$@item.Total</td>
+					</tr>
+
+					endTotal += item.Total;
+				}
 			</tbody>
 		</table>
 		<div class="total-price">
 			<h4>Cart Total</h4>
 			<div class="price">
 				<span>Total</span>
-				<span> $ 180</span>
+				<span> $ @endTotal</span>
 			</div>
 			<button class="btn">procced to checkout</button>
 		</div>
@@ -138,6 +77,8 @@ links{
 </section>
 <!-- shop cart area end -->
 script{
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.30/sweetalert2.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="~/assets/js/shop-cart.js"></script>
 
 }

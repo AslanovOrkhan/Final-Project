@@ -46,3 +46,38 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 // scroll top end
+
+$(document).on('click', '.fa-times-circle', function () {
+    var id = $(this).data('id')
+    var basketCount = $('.quantity')
+    var basketCurrentCount = $('.quantity').html()
+    var quantity = $(this).data('quantity')
+    var sum = basketCurrentCount - quantity
+
+    $.ajax({
+        method: 'Post',
+        url: "/basket/delete",
+        data: {
+            id: id
+        },
+        success: function () {
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!",
+            }).then(function (result) {
+                if (result.isConfirmed) {
+                    $(`.basket-product[id=${id}]`).remove();
+                    basketCount.html("");
+                    basketCount.append(sum);
+                } else {
+                    return false;
+                }
+            });
+        }
+    })
+})

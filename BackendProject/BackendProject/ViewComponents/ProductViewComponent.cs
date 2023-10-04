@@ -13,7 +13,7 @@ public class ProductViewComponent : ViewComponent
 
 	public async Task<IViewComponentResult> InvokeAsync()
 	{
-		var products = await _context.Products.Take(8).ToListAsync();
+		var products = await _context.Products.Take(4).ToListAsync();
 
 		return View(products);
 	}
