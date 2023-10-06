@@ -169,4 +169,41 @@ $(function () {
             }
         })
     })
+
+    $(document).on("keyup", "#search", function () {
+        let inputVal = $(this).val().trim();
+
+        $(".shop-product .shop-item").slice(0).remove();
+        $.ajax({
+            url: "shop/search",
+            type: "Get",
+            contentType: "application/x-www-form-urlencoded",
+            data: {
+                search: inputVal
+            },
+
+            success: function (res) {
+                $(".shop-product").append(res);
+            }
+        });
+    });
+
+    $(document).on("click", ".category", function () {
+        var id = $(this).data('category');
+
+        $(".shop-product .shop-item").slice(0).remove();
+        $.ajax({
+            url: "shop/filtercategory",
+            type: "Get",
+            contentType: "application/x-www-form-urlencoded",
+            data: {
+                id: id
+            },
+
+            success: function (res) {
+                $(".shop-product").append(res);
+            }
+        });
+    });
 })
+

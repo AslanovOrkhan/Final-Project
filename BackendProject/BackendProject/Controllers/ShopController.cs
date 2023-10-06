@@ -33,6 +33,53 @@ namespace BackendProject.Controllers
 
 			return View(shopViewModel);
 		}
+
+		public async Task<IActionResult> Search(string search)
+		{
+			List<Product> products = null;
+
+			if (search != null && search != "")
+			{
+				products = await _context.Products
+				  .Where(m => m.Name.ToLower().Contains(search.ToLower()))
+				  .ToListAsync();
+			}
+			else
+			{
+				products = await _context.Products.ToListAsync();
+			}
+
+			ShopViewModel model = new()
+			{
+				Products = products
+			};
+
+			return PartialView("_ProductsPartial", model);
+		}
+
+		public async Task<IActionResult> Filtercategory(int id)
+		{
+			List<Product> products = null;
+
+			if (id != 0)
+			{
+				products = await _context.Products.
+					Where(m => m.CategoryId == id)
+					.ToListAsync();
+			}
+			else
+			{
+				products = await _context.Products.ToListAsync();
+			}
+
+			ShopViewModel model = new()
+			{
+				Products = products
+			};
+
+			return PartialView("_ProductsPartial", model);
+		}
+
 		public IActionResult Detail()
 		{
 			return View();
@@ -55,7 +102,7 @@ namespace BackendProject.Controllers
 
 			foreach (var dbBasketProduct in basket.BasketProducts)
 			{
-				BasketProductVM basketProduct = new BasketProductVM
+				BasketProductVM basketProduct = new()
 				{
 					Id = dbBasketProduct.Id,
 					ProductId = dbBasketProduct.ProductId,
@@ -75,5 +122,7 @@ namespace BackendProject.Controllers
 		{
 			return View();
 		}
+
+
 	}
 }

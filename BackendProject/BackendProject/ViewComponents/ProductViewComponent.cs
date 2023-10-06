@@ -14,6 +14,7 @@ public class ProductViewComponent : ViewComponent
 	public async Task<IViewComponentResult> InvokeAsync()
 	{
 		var products = await _context.Products.Take(4).ToListAsync();
+		ViewBag.ProductsCount = _context.Products.Count();
 
 		return View(products);
 	}

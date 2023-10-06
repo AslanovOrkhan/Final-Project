@@ -1,4 +1,5 @@
 ﻿@model ShopViewModel
+
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @{
@@ -28,52 +29,10 @@ link{
 <!-- shop product start -->
 <section class="blog-area-container">
 	<div class="blog-container">
+
 		<div class="shop-product-container">
 			<div class="shop-product">
-            @await Component.InvokeAsync("Product");
-			</div>
-			<div class="pagination">
-				<ul>
-					<li>
-						<a href="">
-							<span>
-								<i class="fa-solid fa-angles-left"></i>
-							</span>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<span> 01</span>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<span>02</span>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<span>03</span>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<span> .... </span>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<span>10</span>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<span>
-								<i class="fa-solid fa-angles-right"></i>
-							</span>
-						</a>
-					</li>
-				</ul>
+				<partial name="_ProductsPartial" />
 			</div>
 		</div>
 		<div class="shop-nav">
@@ -92,19 +51,17 @@ link{
 			<div class="categories">
 				<h2>Categories</h2>
 				<ul>
-					<li>
-						<a href="#">All</a>
+					<li class="category" data-category="0">
+						<a>All</a>
 						<span>(@ViewBag.ProductsCount)</span>
 					</li>
 					@foreach (var category in Model.Categories)
 					{
-						<li>
-							<a asp-route-categoryId="@category.Id" asp-action="index">@category.Name</a>
+						<li class="category" data-category="@category.Id">
+							<a>@category.Name</a>
 							<span>(@category.Products.Count)</span>
 						</li>
-
 					}
-
 				</ul>
 			</div>
 			<div class="filter">
@@ -177,6 +134,4 @@ link{
 <!-- shop product end -->
 script{
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="~/assets/js/shop.js"></script>
-
-}
+<script src="~/assets/js/shop.js"></script>}
