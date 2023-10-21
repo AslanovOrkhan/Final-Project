@@ -48,21 +48,46 @@ window.onload = calcScrollValue;
 // scroll top end
 // fiter product section start
 
-const categoryButtons = document.querySelectorAll(".categoryBtn");
-const menuItems = document.querySelectorAll(".menu1");
+//const categoryButtons = document.querySelectorAll(".categoryBtn");
+//const menuItems = document.querySelectorAll(".menu1");
 
-categoryButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const selectedCategory = button.getAttribute("data-category");
-    menuItems.forEach((item) => {
-      const itemCategory = item.getAttribute("data-category");
-      if (selectedCategory === "all" || itemCategory === selectedCategory) {
-        item.style.display = "inline-flex";
-      } else {
-        item.style.display = "none";
-      }
-    });
-  });
-});
+//categoryButtons.forEach((button) => {
+//  button.addEventListener("click", () => {
+//    const selectedCategory = button.getAttribute("data-category");
+//    menuItems.forEach((item) => {
+//      const itemCategory = item.getAttribute("data-category");
+//      if (selectedCategory === "all" || itemCategory === selectedCategory) {
+//        item.style.display = "inline-flex";
+//      } else {
+//        item.style.display = "none";
+//      }
+//    });
+//  });
+//});
+$(function () {
+    $(document).on('click', '#categories .categoryBtn', function (e) {
+        e.preventDefault();
+        let category = $(this).attr('data-id');
+        console.log(category)
+        let products = $('.menu1');
+
+        console.log(products)
+
+        products.each(function (e) {
+            if (category === $(this).attr('data-id')) {
+                  console.log(this)
+                $(this).fadeIn();
+
+            }
+            else {
+                $(this).hide();
+            }
+        })
+        if (category === 'All') {
+            products.fadeIn();
+        }
+    })
+})
+
 
 // fiter product section end

@@ -1,5 +1,4 @@
-﻿using BackendProject.Models;
-using BackendProject.Models.Common;
+﻿using BackendProject.Models.Common;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,11 +12,17 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
 	public DbSet<Slider> Sliders { get; set; } = null!;
 	public DbSet<Service> Services { get; set; } = null!;
-    public DbSet<Product> Products { get; set; } = null!;
-    public DbSet<Category> Categories { get; set; } = null!;
+	public DbSet<Product> Products { get; set; } = null!;
+	public DbSet<Category> Categories { get; set; } = null!;
+	public DbSet<MenuCategory> MenuCategories { get; set; } = null!;
+	public DbSet<Menu> Menus { get; set; } = null!;
 	public DbSet<Setting> Settings { get; set; } = null!;
 	public DbSet<Basket> Baskets { get; set; }
 	public DbSet<BasketProduct> BasketProducts { get; set; }
+
+	public DbSet<Contact> Contacts { get; set; }
+	public DbSet<Chef> Chefs { get; set; }
+	public DbSet<SocialMedia> SocialMedias { get; set; }
 
 
 	public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

@@ -2,11 +2,8 @@
 using BackendProject.Utils;
 using BackendProject.Utils.Enums;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NuGet.ContentModel;
 using System.Data;
-using System.Linq;
 
 namespace BackendProject.Areas.Admin.Controllers
 {
@@ -185,5 +182,16 @@ namespace BackendProject.Areas.Admin.Controllers
 
 			return RedirectToAction(nameof(Index));
 		}
+
+		[Authorize(Roles = "Admin,Moderator")]
+		public IActionResult Detail(int id)
+		{
+
+			Service? service = _appDbContext.Services.AsNoTracking().FirstOrDefault(s => s.Id == id);
+			if (service is null)
+				return NotFound();
+			return View(service);
+		}
+
 	}
 }

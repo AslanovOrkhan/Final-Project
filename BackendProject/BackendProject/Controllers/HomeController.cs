@@ -14,27 +14,29 @@ namespace BackendProject.Controllers
             List<Slider> sliders = _context.Sliders.ToList();
             List<Service> services = _context.Services.ToList();
             List<Product> products = _context.Products.OrderByDescending(p => p.Rating).Take(4).ToList();
-			 
+            List<Menu> menus = _context.Menus.OrderByDescending(p => p.CreatedAt).Take(2).ToList();
 
-			HomeViewModel homeViewModel = new()
+
+            HomeViewModel homeViewModel = new()
             {
                 Sliders = sliders,
                 Services = services,
-                Products=products
+                Products = products,
+                Menus = menus
             };
 
-			HttpContext.Session.SetString("name", "Orkhan");
-			Response.Cookies.Append("surname", "Aslanov", new CookieOptions
-			{
-			MaxAge = TimeSpan.FromSeconds(30)
-			});
-			return View(homeViewModel);
+            HttpContext.Session.SetString("name", "Orkhan");
+            Response.Cookies.Append("surname", "Aslanov", new CookieOptions
+            {
+                MaxAge = TimeSpan.FromSeconds(30)
+            });
+            return View(homeViewModel);
         }
-		public IActionResult Test()
-		{
-			var name = HttpContext.Session.GetString("name");
-			var surname = Request.Cookies["surname"];
-			return Content(name + " " + surname);
-		}
-	}
+        public IActionResult Test()
+        {
+            var name = HttpContext.Session.GetString("name");
+            var surname = Request.Cookies["surname"];
+            return Content(name + " " + surname);
+        }
+    }
 }

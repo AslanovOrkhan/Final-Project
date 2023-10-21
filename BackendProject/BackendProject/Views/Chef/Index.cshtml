@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<Chef>
+
+@{
 	ViewData["Title"] = "Chef Page";
 }
 
@@ -28,330 +30,28 @@ links{
 <section class="blogs" id="blogs">
 	<h1 class="heading">MEET OUR PROFESSIONAL</h1>
 	<div class="box-container">
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-1.jpeg" alt="" />
+		@foreach (var chef in Model)
+		{
+			<div class="box">
+				<div class="image">
+					<img src="~/assets/images/@chef.Image" alt="" />
+				</div>
+				<div class="content">
+					<a href="#" class="title">@chef.Name</a>
+					<span>@chef.ExperienceInYears YEAR EXPERIENCE</span>
+					<ul>
+						@foreach (var social in chef.SocialMedias)
+						{
+							<li>
+								<a href="#">
+									<i class="fa-brands fa-@social.Social"></i>
+								</a>
+							</li>
+						}
+					</ul>
+				</div>
 			</div>
-			<div class="content">
-				<a href="#" class="title">RASALINA DE WILLAMSON</a>
-				<span>12 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-2.jpeg" alt="" />
-			</div>
-			<div class="content">
-				<a href="#" class="title"> ALEXTINA JIMIEY</a>
-				<span>09 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-1.jpeg" alt="" />
-			</div>
-			<div class="content">
-				<a href="#" class="title"> JIMMEY AENDERSON</a>
-				<span>05 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-1.jpeg" alt="" />
-			</div>
-			<div class="content">
-				<a href="#" class="title"> JIMMEY AENDERSON</a>
-				<span>05 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-1.jpeg" alt="" />
-			</div>
-			<div class="content">
-				<a href="#" class="title"> JIMMEY AENDERSON</a>
-				<span>05 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-1.jpeg" alt="" />
-			</div>
-			<div class="content">
-				<a href="#" class="title"> JIMMEY AENDERSON</a>
-				<span>05 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-1.jpeg" alt="" />
-			</div>
-			<div class="content">
-				<a href="#" class="title"> JIMMEY AENDERSON</a>
-				<span>05 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-1.jpeg" alt="" />
-			</div>
-			<div class="content">
-				<a href="#" class="title"> JIMMEY AENDERSON</a>
-				<span>05 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="box">
-			<div class="image">
-				<img src="~/assets/images/team-1.jpeg" alt="" />
-			</div>
-			<div class="content">
-				<a href="#" class="title"> JIMMEY AENDERSON</a>
-				<span>05 YEAR EXPERIENCE</span>
-				<ul>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-pinterest-p"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+		}
 	</div>
 </section>
 

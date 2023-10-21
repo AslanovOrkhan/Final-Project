@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ContactVM
+
+@{
 	ViewData["Title"] = "Contact Page";
 }
 links{
@@ -69,19 +71,19 @@ links{
 			</div>
 		</div>
 		<div class="form-container">
-			<form action="index.html">
+			<form asp-controller="Contact" asp-action="Index" method="post">
 				<div class="form1">
-					<input type="text" placeholder="your name:" />
-					<input type="text" placeholder="your mail:" />
+					<input type="text" asp-for="FullName" placeholder="your name:" />
+					<input type="text" asp-for="Email" placeholder="your mail:" />
 				</div>
 				<div class="form2">
-					<input type="text" placeholder="enter your subject:" />
+					<input type="text" asp-for="Subject" placeholder="enter your subject:" />
 				</div>
 				<div class="text-area-container">
-					<textarea name="message" placeholder="your message"></textarea>
+					<textarea name="message" asp-for="Message" placeholder="your message"></textarea>
 				</div>
 				<div class="contact-btn">
-					<button class="btn-contact">send message</button>
+					<button type="submit" class="btn-contact">send message</button>
 				</div>
 			</form>
 		</div>

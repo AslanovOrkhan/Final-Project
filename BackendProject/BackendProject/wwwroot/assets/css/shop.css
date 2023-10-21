@@ -441,7 +441,7 @@ header {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
   padding-top: 15rem;
   padding-bottom: 10rem;
 }
@@ -451,8 +451,8 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1.2rem;
-/*  width:100%;
-*/
+  width:100%;
+
 }
 .shop-item {
   border: 1px solid #e2dfdd;
@@ -462,8 +462,7 @@ header {
   align-items: center;
   border-radius: 7px;
   gap: 1rem;
-  padding: 2rem 2rem;
-  width:32%;
+  padding: 2rem 6rem;
 }
 .shop-item .shop-icons {
   display: flex;
@@ -510,7 +509,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width:30%;
+  width:28%;
 }
 .shop-nav .search {
   border: 1px solid #e2dfdd;
@@ -536,7 +535,6 @@ header {
 .shop-nav .search form input {
   width: 26rem;
   height: 4rem;
-  border: px solid #e2dfdd;
 }
 .shop-nav .search form button {
   background: transparent;
