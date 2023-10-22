@@ -34,7 +34,7 @@ namespace BackendProject.Controllers
 
 			foreach (var dbBasketProduct in basket.BasketProducts)
 			{
-				BasketProductVM basketProduct = new BasketProductVM
+				BasketProductVM basketProduct = new()
 				{
 					Id = dbBasketProduct.Id,
 					ProductId = dbBasketProduct.ProductId,
@@ -90,7 +90,6 @@ namespace BackendProject.Controllers
 					Quantity = 1
 				};
 				await _context.BasketProducts.AddAsync(basketProduct);
-
 			}
 
 			await _context.SaveChangesAsync();

@@ -425,6 +425,18 @@
       "PackagePath": "staticwebassets\\assets\\images\\255e71a8-de41-40ce-ad2a-95fa628fbace-r-post-1.jpeg"
     },
     {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\5ee976c4-2830-46cb-961f-6484487ada42_ci-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\5ee976c4-2830-46cb-961f-6484487ada42_ci-3.png"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\6798dd9d-52f1-4e29-a149-f974daabd238_team-2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\6798dd9d-52f1-4e29-a149-f974daabd238_team-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\6ea28931-6a28-4678-a8dc-a18f9bfcc34a_blog-1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\6ea28931-6a28-4678-a8dc-a18f9bfcc34a_blog-1.jpeg"
+    },
+    {
       "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\about-bg-3-1.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\about-bg-3-1.jpeg"
     },
@@ -635,10 +647,6 @@
     {
       "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\t-quote.png",
       "PackagePath": "staticwebassets\\assets\\images\\t-quote.png"
-    },
-    {
-      "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\team-1.jpeg",
-      "PackagePath": "staticwebassets\\assets\\images\\team-1.jpeg"
     },
     {
       "Id": "C:\\Users\\oasla\\Desktop\\Final Project\\BackendProject\\BackendProject\\wwwroot\\assets\\images\\team-2.jpeg",

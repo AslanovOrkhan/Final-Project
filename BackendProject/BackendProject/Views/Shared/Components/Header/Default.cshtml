@@ -54,7 +54,9 @@
 			<i class="fas fa-search" id="search-btn"></i>
 		</div>
 		<div>
-			<i class="fa solid fa-basket-shopping" id="cart-btn"></i>
+			<a asp-controller="Shop" asp-action="Cart">
+				<i class="fa solid fa-basket-shopping" id="cart-btn"></i>
+			</a>
 			<span class="quantity">@Model.Count</span>
 			<span style="display: none;" class="quantity2">@Model.Count</span>
 		</div>
@@ -69,29 +71,18 @@
 		<label for="search-box" class="fas fa-search"></label>
 	</div>
 	<!-- header cart items -->
-	<div class="cart-items-container">
-		@foreach (var item in Model.Basket.BasketProducts)
-		{
-			<div class="cart-item">
-				<span data-id="@item.Id" data-quantity="@item.Quantity" class="fas fa-times"></span>
-				<img src="~/assets/images/@item.Image" alt="" />
-				<div class="content">
-					<h3>@item.Name</h3>
-					<div class="price">$@item.Price/-</div>
-				</div>
-			</div>
-
-			endTotal += item.Total;
-		}
-		<div class="sub-total">
-			<span> SUB TOTAL:</span>
-			<span>$@endTotal</span>
-		</div>
-		<div class="sub-button">
-			<a href="#" class="sub-btn">cehckout now</a>
-			<a href="#" class="sub-btn">cehckout now</a>
-		</div>
+	@*<div class="cart-items-container">
+	<div class="product_list">
 	</div>
+	<div class="sub-total">
+	<span> SUB TOTAL:</span>
+	<span></span>
+	</div>
+	<div class="sub-button">
+	<a href="#" class="sub-btn">cehckout now</a>
+	<a href="#" class="sub-btn">cehckout now</a>
+	</div>
+	</div>*@
 	<div class="responsive-header-container">
 		<div>
 			<img src="~/assets/images/logo-black.png" alt="" />

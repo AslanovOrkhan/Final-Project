@@ -1,0 +1,13 @@
+﻿@model HeaderVM
+
+@foreach (var item in Model.Basket.BasketProducts)
+{
+	<div class="cart-item">
+		<span data-id="@item.Id" data-quantity="@item.Quantity" class="fas fa-times"></span>
+		<img src="~/assets/images/@item.Image" alt="" />
+		<div class="content">
+			<h3>@item.Name</h3>
+			<div class="price">$@item.Price/-</div>
+		</div>
+	</div>
+}

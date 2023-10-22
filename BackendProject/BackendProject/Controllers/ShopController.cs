@@ -84,6 +84,7 @@ namespace BackendProject.Controllers
 		{
 			return View();
 		}
+
 		public async Task<IActionResult> Cart()
 		{
 			AppUser user = await _userManager.GetUserAsync(User);
