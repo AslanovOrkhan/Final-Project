@@ -50,8 +50,19 @@
 
 	<!-- header icons -->
 	<div class="icons">
-		<div>
-			<i class="fas fa-search" id="search-btn"></i>
+		<div class="search-btn-icon">
+			<i class="fa-solid fa-user" id="search-btn"></i>
+			
+
+				@if (User.Identity.IsAuthenticated)
+				{
+					<span>@User.Identity.Name</span>
+					<a asp-controller="Account" asp-action="Logout">Logout</a>
+				}
+				else
+				{
+					<a asp-controller="Account" asp-action="Login">Login</a>
+ 				}
 		</div>
 		<div>
 			<a asp-controller="Shop" asp-action="Cart">

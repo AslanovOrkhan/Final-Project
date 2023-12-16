@@ -192,11 +192,13 @@ header {
 .header .icons div i {
   color: var(--bg);
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-left: 2rem;
 }
 .header .icons {
   display: flex;
+  justify-content:center;
+  align-items:center;
 }
 .header .icons div {
   position: relative;
@@ -220,6 +222,17 @@ header {
 .header .icons div i:hover {
   color: var(--main-color);
 }
+.search-btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+    .search-btn-icon span {
+        color: var(--black);
+        font-size: 2rem;
+        cursor: pointer;
+    }
 #menu-btn {
   display: none;
 }

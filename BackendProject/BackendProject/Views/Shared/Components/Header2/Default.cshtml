@@ -3,7 +3,7 @@
 <!-- header section start -->
 <header class="header">
 	<a href="#" class="logo">
-		<img src="~/assets/images/@Model.Settings["HeaderLogo"]" alt="" />
+		<img src="~/assets/images/@Model.Settings["HeaderLogo2"]" alt="" />
 	</a>
 	<!-- header navbar -->
 	<ul class="navbar">
@@ -50,8 +50,17 @@
 
 	<!-- header icons -->
 	<div class="icons">
-		<div>
-			<i class="fas fa-search" id="search-btn"></i>
+		<div class="search-btn-icon">			 
+			<i class="fa-solid fa-user" id="search-btn"></i>
+			@if (User.Identity.IsAuthenticated)
+			{
+				<span>@User.Identity.Name</span>
+				<a asp-controller="Account" asp-action="Logout">Logout</a>  
+			}
+			else
+			{
+				<a asp-controller="Account" asp-action="Login">Login</a>  
+			}
 		</div>
 		<div>
 			<a asp-controller="Shop" asp-action="Cart">
@@ -64,11 +73,6 @@
 		<div>
 			<i class="fas fa-bars" id="menu-btn"></i>
 		</div>
-	</div>
-	<!-- header search -->
-	<div class="search-form">
-		<input type="text" id="search-box" placeholder="search here...." />
-		<label for="search-box" class="fas fa-search"></label>
 	</div>
 	<!-- header cart items -->
 @*	<div class="cart-items-container">

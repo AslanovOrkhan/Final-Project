@@ -28,7 +28,7 @@
 										<td>@contact.Subject</td>
 										<td>
 											<a class="btn btn-success" asp-action="Detail" asp-route-id="@contact.Id">Detail</a>
- 											<a class="btn btn-danger asp-action="Delete" asp-route-id=@contact.Id>Delete</a>
+											<a class="btn btn-danger @(ViewBag.Count == 1 ? "disabled" : "")" asp-action="Delete" asp-route-id=@contact.Id>Delete</a>
 										</td>
 									</tr>
 								}

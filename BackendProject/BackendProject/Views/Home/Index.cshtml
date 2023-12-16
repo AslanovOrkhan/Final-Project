@@ -101,7 +101,7 @@
 					quis quam venenatis fringilla. Morbi vestibulum id tellus mmodo
 					mattis. Aliquam erat volutpat.
 				</p>
-				<a href="about.html" class="btn">learn more</a>
+				<a aria-current="page" asp-controller="About" asp-action="Index" class="btn">learn more</a>
 			</div>
 		</div>
 	</section>
@@ -117,19 +117,19 @@
 		<div class="menu-flex">
 			@foreach (var menu in Model.Menus)
 			{
-				
-			<div class="menu1">
-				<div class="small-image">
-					<img src="~/assets/images/@menu.Image" alt="" />
+
+				<div class="menu1">
+					<div class="small-image">
+						<img src="~/assets/images/@menu.Image" alt="" />
+					</div>
+					<div>
+						<h4>@menu.Name</h4>
+					</div>
+					<div class="line"></div>
+					<div>
+						<h4>@menu.Price</h4>
+					</div>
 				</div>
-				<div>
-					<h4>@menu.Name</h4>
-				</div>
-				<div class="line"></div>
-				<div>
-					<h4>@menu.Price</h4>
-				</div>
-			</div>
 			}
 
 		</div>
@@ -146,13 +146,11 @@
 				<h2>CAFENA POPULAR PRODUCT</h2>
 			</div>
 			<div class="links">
-				<button class="btn">view all products</button>
+				<button class="btn"><a aria-current="page" asp-controller="Shop" asp-action="Index">view all products</a></button>
 			</div>
 		</div>
 		<div class="shop-flex">
 			@await Component.InvokeAsync("Product");
-			
-
 		</div>
 	</section>
 	<!-- product section end -->
@@ -263,7 +261,7 @@
 					</a>
 					<span>BY: RASALINA \ LIFE \ 23.01.2017</span>
 
-					<a href="about.html" class="btn">read more</a>
+					<a aria-current="page" asp-controller="Blog" asp-action="Index" class="btn">read more</a>
 				</div>
 			</div>
 			<div class="box">
@@ -273,7 +271,7 @@
 				<div class="content">
 					<a href="#" class="title">Build A Cool Mornig With Cafena Coffee Coffee</a>
 					<span>BY: RASALINA \ LIFE \ 23.01.2017</span>
-					<a href="about.html" class="btn">read more</a>
+					<a aria-current="page" asp-controller="Blog" asp-action="Index" class="btn">read more</a>
 				</div>
 			</div>
 			<div class="box">
@@ -285,7 +283,7 @@
 						Questions Business Must Be Able To Answers
 					</a>
 					<span>BY: RASALINA \ LIFE \ 23.01.2017</span>
-					<a href="about.html" class="btn">read more</a>
+					<a aria-current="page" asp-controller="Blog" asp-action="Index" class="btn">read more</a>
 				</div>
 			</div>
 		</div>

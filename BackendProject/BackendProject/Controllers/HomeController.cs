@@ -14,7 +14,7 @@ namespace BackendProject.Controllers
             List<Slider> sliders = _context.Sliders.ToList();
             List<Service> services = _context.Services.ToList();
             List<Product> products = _context.Products.OrderByDescending(p => p.Rating).Take(4).ToList();
-            List<Menu> menus = _context.Menus.OrderByDescending(p => p.CreatedAt).Take(2).ToList();
+            List<Menu> menus = _context.Menus.OrderByDescending(p => p.CreatedAt).Take(8).ToList();
 
 
             HomeViewModel homeViewModel = new()

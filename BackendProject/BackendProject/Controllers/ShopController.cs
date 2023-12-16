@@ -93,8 +93,8 @@ namespace BackendProject.Controllers
 			var basket = await _context.Baskets
 			   .Include(m => m.BasketProducts)
 			   .ThenInclude(m => m.Product)
-			   .Include(m => m.BasketProducts)
-			   .ThenInclude(m => m.Product)
+			   //.Include(m => m.BasketProducts)
+			   //.ThenInclude(m => m.Product)
 			   .FirstOrDefaultAsync(m => m.AppUserId == user.Id);
 
 			BasketListVM model = new();
@@ -119,8 +119,25 @@ namespace BackendProject.Controllers
 
 			return View(model);
 		}
-		public IActionResult Checkout()
+		public async Task<IActionResult> Checkout()
 		{
+			AppUser user = await _userManager.GetUserAsync(User);
+
+			if (user == null) return Unauthorized();
+			var basket = await _context.Baskets
+			   .Include(m => m.BasketProducts)
+			   .ThenInclude(m => m.Product)
+			   .Include(m => m.BasketProducts)
+			   .ThenInclude(m => m.Product)
+			   .FirstOrDefaultAsync(m => m.AppUserId == user.Id);
+
+			double totalPrice = 0;
+
+			foreach (var dbBasket in basket.BasketProducts)
+			{
+				totalPrice += (dbBasket.Product.Price * dbBasket.Quantity);
+			}
+			ViewBag.TotalPrice = totalPrice;
 			return View();
 		}
 

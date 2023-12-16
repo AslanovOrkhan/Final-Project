@@ -57,11 +57,11 @@ namespace BackendProject.Areas.Admin.Controllers
 				ModelState.AddModelError("Image", "Image bos ola bilmez");
 				return View();
 			}
-			if (!serviceViewModel.Image.CheckFileSize(100))
-			{
-				ModelState.AddModelError("Image", "Faylin hecmi 100kb dan kicik olmalidir");
-				return View();
-			}
+			//if (!serviceViewModel.Image.CheckFileSize(100))
+			//{
+			//	ModelState.AddModelError("Image", "Faylin hecmi 100kb dan kicik olmalidir");
+			//	return View();
+			//}
 			if (!serviceViewModel.Image.CheckFileType(ContentType.image.ToString()))
 			{
 				ModelState.AddModelError("Image", "Faylin tipi sekil olmalidir");

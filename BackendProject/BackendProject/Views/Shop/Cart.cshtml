@@ -71,7 +71,11 @@ links{
 				<span>Total</span>
 				<span> $ @endTotal</span>
 			</div>
-			<button class="btn">procced to checkout</button>
+			<button class="btn">
+				<a aria-current="page" asp-controller="Shop" asp-action="Checkout">
+				procced to checkout
+				</a>
+				</button>
 		</div>
 	</div>
 </section>

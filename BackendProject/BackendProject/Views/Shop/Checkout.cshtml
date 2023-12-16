@@ -2,7 +2,7 @@
 	ViewData["Title"] = "Shop Checkout Page";
 }
 links{
-		<link rel="stylesheet" href="~/assets/css/shop-checkout.css" />
+<link rel="stylesheet" href="~/assets/css/shop-checkout.css" />
 
 }
 <!-- about home start -->
@@ -92,7 +92,7 @@ links{
 				<h4>Cart Total</h4>
 				<div class="price">
 					<span>Total</span>
-					<span> $ 180</span>
+					<span>$@ViewBag.TotalPrice</span>
 				</div>
 				<button class="btn">procced to checkout</button>
 			</div>
@@ -102,6 +102,6 @@ links{
 
 <!-- shop checkout form end -->
 script{
-		<script src="~/assets/js/shop-checkout.js"></script>
+<script src="~/assets/js/shop-checkout.js"></script>
 
 }
